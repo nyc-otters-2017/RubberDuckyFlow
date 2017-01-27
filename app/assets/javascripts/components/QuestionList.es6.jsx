@@ -10,7 +10,7 @@ class QuestionList extends React.Component {
               return(<Question
 
                 key={question.id}
-                title={question.title}
+                data={question}
               />)
             })
           }

@@ -4,8 +4,9 @@ class Question extends React.Component {
   }
 
   render() {
+    var questionID = "/questions/" + this.props.data.id
     return(
-      <h1>{this.props.title}</h1>
+      <a href={questionID}><h3>{this.props.data.title}</h3></a>
     )
   }
 }
